@@ -1,50 +1,72 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
 	<head>
 
-		<title>CatPhotoApp</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
 
 		<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
 
 		<link rel="stylesheet" type="text/css" href="assets/stylesheets/custom.css">
+
+		<title>CatPhotoApp</title>
+
 	</head>
 
 	<body>
 
-		<h2 class="red-text">CatPhotoApp</h2>
+		<div class="container-fluid">
 
-		<a href="#"><img src="https://bit.ly/fcc-relaxing-cat" alt="cute cat picture" class="smaller-image thick-green-border"></a>
+			<h2 class="text-primary text-center">CatPhotoApp</h2>
 
-		<p>View more <a href="http://freecatphotoapp.com">cat photos</a></p>
+			<a href="#"><img src="https://bit.ly/fcc-relaxing-cat" alt="cute cat picture" class="img-responsive thick-green-border"></a>
 
-		<div class="silver-background">
+			<img class="img-responsive" src="https://bit.ly/fcc-running-cats" alt="running cats">
 
-			<p>Things cats love:</p>
-			<ul>
-				<li>Sleeping</li>
-				<li>Laser pointers</li>
-				<li>Being loved</li>
-			</ul>
+			<div class="row">
 
-			<p>Things cats hate:</p>
-			<ol>
-				<li>Being disturbed</li>
-				<li>Other animals</li>
-				<li>Reflections</li>
-			</ol>
+				<div class="col-xs-4"><button class="btn btn-block btn-primary">Like</button></div>
+
+				<div class="col-xs-4"><button class="btn btn-block btn-info">Info</button></div>
+
+				<div class="col-xs-4"><button class="btn btn-block btn-danger">Delete</button></div>
+
+			</div>
+
+			<p>View more <a href="http://freecatphotoapp.com">cat photos</a></p>
+
+			<div class="silver-background">
+
+				<p>Things cats love:</p>
+				<ul>
+					<li>Sleeping</li>
+					<li>Laser pointers</li>
+					<li>Being loved</li>
+				</ul>
+
+				<p>Things cats hate:</p>
+				<ol>
+					<li>Being disturbed</li>
+					<li>Other animals</li>
+					<li>Reflections</li>
+				</ol>
+
+			</div>
+
+			<form action="/submit-cat-photo" id="cat-photo-form">
+				<label><input type="checkbox" name="personality" checked>Loving</label>
+				<label><input type="checkbox" name="personality">Independent</label>
+				<label><input type="checkbox" name="personality">Sassy</label>
+				<label><input type="radio" name="indoor-outdoor" checked>Indoor</label>
+				<label><input type="radio" name="indoor-outdoor">Outdoor</label>
+				<input type="text" placeholder="cat photo URL" required>
+				<button type="submit">Submit</button>
+			</form>
 
 		</div>
-
-		<form action="/submit-cat-photo" id="cat-photo-form">
-			<label><input type="checkbox" name="personality" checked>Loving</label>
-			<label><input type="checkbox" name="personality">Independent</label>
-			<label><input type="checkbox" name="personality">Sassy</label>
-			<label><input type="radio" name="indoor-outdoor" checked>Indoor</label>
-			<label><input type="radio" name="indoor-outdoor">Outdoor</label>
-			<input type="text" placeholder="cat photo URL" required>
-			<button type="submit">Submit</button>
-		</form>
 
 	</body>
 </html>
