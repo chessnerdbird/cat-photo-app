@@ -2,20 +2,45 @@
 
 <html>
 	<head>
+
 		<title>CatPhotoApp</title>
+
+		<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
 
 		<link rel="stylesheet" type="text/css" href="assets/stylesheets/custom.css">
 	</head>
 
 	<body>
 
-		<h2>CatPhotoApp</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<h2 class="red-text">CatPhotoApp</h2>
+
+		<a href="#"><img src="https://bit.ly/fcc-relaxing-cat" alt="cute cat picture" class="smaller-image thick-green-border"></a>
+
+		<p>View more <a href="http://freecatphotoapp.com">cat photos</a></p>
+
+		<p>Things cats love:</p>
+		<ul>
+			<li>Sleeping</li>
+			<li>Laser pointers</li>
+			<li>Being loved</li>
+		</ul>
+
+		<p>Things cats hate:</p>
+		<ol>
+			<li>Being disturbed</li>
+			<li>Other animals</li>
+			<li>Reflections</li>
+		</ol>
+
+		<form action="/submit-cat-photo">
+			<label><input type="checkbox" name="personality">Loving</label>
+			<label><input type="checkbox" name="personality">Independent</label>
+			<label><input type="checkbox" name="personality">Sassy</label>
+			<label><input type="radio" name="indoor-outdoor">Indoor</label>
+			<label><input type="radio" name="indoor-outdoor">Outdoor</label>
+			<input type="text" placeholder="cat photo URL" required>
+			<button type="submit">Submit</button>
+		</form>
 
 	</body>
 </html>
